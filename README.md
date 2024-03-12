@@ -6,7 +6,7 @@
 
 ### App Description
 `TODO://` Add app description
-
+This app will display a question and when you click on it , it will display the answer
 
 
 <img src="https://github.com/wdolcine/Flash_cardApp/blob/main/Screenshot_20240311_212540.png" width=200><br>
