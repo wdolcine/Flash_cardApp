@@ -9,7 +9,8 @@
 
 
 
-<img src="YOUR_GIF_URL_HERE" width=200><br>
+<img src="https://github.com/wdolcine/Flash_cardApp/blob/main/Screenshot_20240311_212540.png" width=200><br>
+<img src="https://github.com/wdolcine/Flash_cardApp/blob/main/Screenshot_20240311_212540.png" width=200><br>
 
 
 
