@@ -5,7 +5,7 @@
     android:id="@+id/flash"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context="MainActivity">
 
     <TextView
         android:id="@+id/flashcard_question"
@@ -81,13 +81,24 @@
 
     <ImageView
         android:id="@+id/toggle_choices_visibility"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
         android:layout_below="@id/flashcard_answer3"
         android:layout_centerInParent="true"
         android:layout_marginTop="169dp"
         android:elevation="5dp"
         android:src="@drawable/icon_eye"
+
+        />
+    <ImageView
+        android:id="@+id/toggle_choices_visibility1"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/flashcard_answer3"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="169dp"
+        android:elevation="5dp"
+        android:src="@drawable/icon_show_eye"
 
         />
 

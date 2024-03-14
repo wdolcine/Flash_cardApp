@@ -17,6 +17,8 @@ class MainActivity : AppCompatActivity() {
         val flashcardAnswer2 = findViewById<TextView>(R.id.flashcard_answer2)
         val flashcardAnswer3 = findViewById<TextView>(R.id.flashcard_answer3)
         val toggleChoicesVisibility = findViewById<ImageView>(R.id.toggle_choices_visibility)
+        val toggleChoicesVisibility1 = findViewById<ImageView>(R.id.toggle_choices_visibility1)
+
 
 
 //        flashcardAnswer.visibility = View.INVISIBLE
@@ -52,7 +54,10 @@ class MainActivity : AppCompatActivity() {
             isShowingAnswers = !isShowingAnswers
 
             if (isShowingAnswers) {
-                toggleChoicesVisibility.setImageResource(R.drawable.icon_eye)
+                toggleChoicesVisibility1.setImageResource(R.drawable.icon_show_eye)
+                toggleChoicesVisibility.visibility = View.VISIBLE
+                toggleChoicesVisibility1.visibility = View.INVISIBLE
+
                 flashcardAnswer.visibility = View.VISIBLE
                 flashcardAnswer2.visibility = View.VISIBLE
                 flashcardAnswer3.visibility = View.VISIBLE
@@ -63,6 +68,9 @@ class MainActivity : AppCompatActivity() {
                 findViewById<View>(R.id.flashcard_answer3).setBackgroundColor(resources.getColor(R.color.pinK, null))
             } else {
                 toggleChoicesVisibility.setImageResource(R.drawable.icon_eye)
+
+                toggleChoicesVisibility.visibility = View.INVISIBLE
+                toggleChoicesVisibility1.visibility = View.VISIBLE
                 flashcardAnswer.visibility = View.INVISIBLE
                 flashcardAnswer2.visibility = View.INVISIBLE
                 flashcardAnswer3.visibility = View.INVISIBLE
@@ -73,6 +81,38 @@ class MainActivity : AppCompatActivity() {
                 findViewById<View>(R.id.flashcard_answer3).setBackgroundColor(resources.getColor(R.color.pinK, null))
             }
         }
+        toggleChoicesVisibility1.setOnClickListener {
+            isShowingAnswers = !isShowingAnswers
+
+            if (isShowingAnswers) {
+                toggleChoicesVisibility1.setImageResource(R.drawable.icon_show_eye)
+                toggleChoicesVisibility.visibility = View.VISIBLE
+                toggleChoicesVisibility1.visibility = View.INVISIBLE
+
+                flashcardAnswer.visibility = View.VISIBLE
+                flashcardAnswer2.visibility = View.VISIBLE
+                flashcardAnswer3.visibility = View.VISIBLE
+
+                // Set the flashcards_answers background to their initial color
+                findViewById<View>(R.id.flashcard_answer).setBackgroundColor(resources.getColor(R.color.pinK, null))
+                findViewById<View>(R.id.flashcard_answer2).setBackgroundColor(resources.getColor(R.color.pinK, null))
+                findViewById<View>(R.id.flashcard_answer3).setBackgroundColor(resources.getColor(R.color.pinK, null))
+            } else {
+                toggleChoicesVisibility.setImageResource(R.drawable.icon_eye)
+
+                toggleChoicesVisibility.visibility = View.INVISIBLE
+                toggleChoicesVisibility1.visibility = View.VISIBLE
+                flashcardAnswer.visibility = View.INVISIBLE
+                flashcardAnswer2.visibility = View.INVISIBLE
+                flashcardAnswer3.visibility = View.INVISIBLE
+
+                // Set the flashcards_answers background to their initial color
+                findViewById<View>(R.id.flashcard_answer).setBackgroundColor(resources.getColor(R.color.pinK, null))
+                findViewById<View>(R.id.flashcard_answer2).setBackgroundColor(resources.getColor(R.color.pinK, null))
+                findViewById<View>(R.id.flashcard_answer3).setBackgroundColor(resources.getColor(R.color.pinK, null))
+            }
+        }
+
 
     }
 }
