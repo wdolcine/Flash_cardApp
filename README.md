@@ -11,6 +11,7 @@ This app will display a question , with severals answers , and an eye icon the w
 
 <img src="https://github.com/wdolcine/Flash_cardApp/blob/main/Screenshot_20240311_212540.png" width=200><br>
 <img src="https://github.com/wdolcine/Flash_cardApp/blob/main/Screenshot_20240311_212600.png" width=200><br>
+<img src="https://github.com/wdolcine/Flash_cardApp/blob/main/Screen_recording_20240311_214755.gif" width=200><br>
 
 
 
