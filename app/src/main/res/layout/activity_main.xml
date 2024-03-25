@@ -13,7 +13,7 @@
         android:layout_height="200dp"
         android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
-        android:layout_marginEnd="20dp"
+        android:layout_marginEnd="10dp"
         android:background="@drawable/cardbackground"
         android:elevation="5dp"
         android:padding="20dp"
@@ -27,9 +27,9 @@
         android:id="@+id/flashcard_answer"
         android:layout_width="match_parent"
         android:layout_height="100dp"
-        android:layout_alignBottom="@id/flashcard_question"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
+        android:layout_marginTop="50dp"
         android:layout_marginBottom="-390dp"
         android:background="@color/pinK"
         android:elevation="5dp"
@@ -41,65 +41,17 @@
         android:textSize="40sp"
         />
 
-    <TextView
-        android:id="@+id/flashcard_answer2"
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:layout_below="@+id/flashcard_question"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="20dp"
-        android:background="@color/pinK"
-        android:elevation="5dp"
-        android:paddingLeft="20dp"
-        android:paddingTop="20dp"
-        android:paddingBottom="20dp"
-        android:text="George H. Bush"
-        android:textAlignment="center"
-        android:textColor="@color/black"
-        android:textSize="40sp"
-        />
-
-    <TextView
-        android:id="@+id/flashcard_answer3"
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:layout_below="@+id/flashcard_answer2"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="18dp"
-        android:layout_marginEnd="20dp"
-        android:background="@color/pinK"
-        android:elevation="5dp"
-        android:paddingLeft="20dp"
-        android:paddingTop="20dp"
-        android:paddingBottom="20dp"
-        android:text="Bill Clinton"
-        android:textAlignment="center"
-        android:textColor="@color/black"
-        android:textSize="40sp"
-        />
-
-    <ImageView
-        android:id="@+id/toggle_choices_visibility"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:layout_below="@id/flashcard_answer3"
-        android:layout_centerInParent="true"
-        android:layout_marginTop="169dp"
-        android:elevation="5dp"
-        android:src="@drawable/icon_eye"
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/cross_show"
+        android:background="@color/white"
+        android:layout_marginTop="630dp"
+        android:layout_marginLeft="330dp"
 
         />
-    <ImageView
-        android:id="@+id/toggle_choices_visibility1"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:layout_below="@id/flashcard_answer3"
-        android:layout_centerInParent="true"
-        android:layout_marginTop="169dp"
-        android:elevation="5dp"
-        android:src="@drawable/icon_show_eye"
 
-        />
+
 
 </RelativeLayout>
